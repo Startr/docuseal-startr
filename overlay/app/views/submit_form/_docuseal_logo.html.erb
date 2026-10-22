@@ -1,0 +1,15 @@
+<%# Startr overlay of DocuSeal 3.0.3 app/views/submit_form/_docuseal_logo.html.erb
+    (the header of the signing page). "Startr" beside the mark, then the
+    DocuSeal credit and the source of our changes (AGPLv3, with the section
+    7(b) attribution term). The footer's "Powered by DocuSeal" line is
+    upstream's and stays. Inline styles: the form pack CSS is purged to the
+    classes upstream uses. %>
+<div class="mx-auto" style="text-align: center">
+  <a href="<%= root_path %>" class="text-2xl md:text-3xl font-bold items-center space-x-3" style="display: inline-flex">
+    <%= render 'shared/logo', class: 'w-9 h-9 md:w-12 md:h-12', alt: '' %>
+    <span>Startr</span>
+  </a>
+  <div class="startr-credit" style="font-size: 0.75rem; opacity: 0.75; margin-top: 0.1rem">
+    powered by <a href="<%= Docuseal::PRODUCT_URL %>" class="underline">DocuSeal</a> · <a href="/startr/source.txt" class="underline">source</a>
+  </div>
+</div>

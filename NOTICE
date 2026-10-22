@@ -1,0 +1,26 @@
+DocuSeal, Startr brand
+======================
+
+DocuSeal
+Copyright (c) DocuSeal LLC and contributors
+https://github.com/docusealco/docuseal
+
+The changes in overlay/ and the build files in this repository
+Copyright (c) 2026 Startr LLC
+
+Both are licensed under the GNU Affero General Public License v3 (LICENSE),
+with the additional term in LICENSE_ADDITIONAL_TERMS under section 7(b): a
+covered work must keep the original DocuSeal attribution in interactive user
+interfaces. "DocuSeal" is a trademark of DocuSeal LLC.
+
+Trademarks (AGPL section 7(e))
+The Startr name and the Startr mark (overlay/public/startr/startr-mark.png and
+the favicon and apple-icon files in overlay/public/) are trademarks of
+Startr LLC. This licence grants no rights to them. You may keep them in
+unmodified copies of this repository, but a service you run from it must not
+present itself as Startr's: replace the mark, the favicons and the name
+"Startr" with your own.
+
+Fonts
+Nunito Sans (overlay/public/startr/fonts/) is licensed under the SIL Open
+Font License 1.1; see overlay/public/startr/fonts/OFL.txt.

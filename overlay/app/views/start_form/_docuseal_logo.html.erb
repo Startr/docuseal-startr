@@ -1,0 +1,16 @@
+<%# Startr overlay of DocuSeal 3.0.3 app/views/start_form/_docuseal_logo.html.erb
+    (the header of a template's public start page). "Startr" beside the mark,
+    then the DocuSeal credit and the source of our changes (AGPLv3, with the
+    section 7(b) attribution term). One wrapping div, so the parent's space-y
+    gap stays as upstream's. %>
+<div>
+  <a href="/" class="flex justify-center items-center">
+    <span class="mr-3">
+      <%= render 'shared/logo', width: '50px', height: '50px', alt: '' %>
+    </span>
+    <h1 class="text-5xl font-bold text-center">Startr</h1>
+  </a>
+  <div class="startr-credit" style="font-size: 0.8rem; opacity: 0.75; margin-top: 0.35rem; text-align: center">
+    powered by <a href="<%= Docuseal::PRODUCT_URL %>" class="underline">DocuSeal</a> · <a href="/startr/source.txt" class="underline">source</a>
+  </div>
+</div>

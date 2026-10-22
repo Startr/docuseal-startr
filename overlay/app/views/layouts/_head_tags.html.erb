@@ -1,0 +1,11 @@
+<%# Startr overlay of DocuSeal 3.0.3 app/views/layouts/_head_tags.html.erb.
+    Changed: "Startr" ahead of "DocuSeal" in the default title, and the
+    startr-theme.css link. Rendered in the head of every layout (application,
+    form, plain), before the pack stylesheet, so the theme wins by specificity,
+    not by order. Bump ?v= whenever startr-theme.css changes: Cloudflare and
+    browsers keep public files for months. %>
+<title>
+  <%= content_for(:html_title) || (signed_in? ? 'Startr · DocuSeal' : 'Startr · Document signing, powered by DocuSeal') %>
+</title>
+<%= render 'shared/meta' %>
+<link rel="stylesheet" href="/startr-theme.css?v=1" media="all">

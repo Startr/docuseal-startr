@@ -1,0 +1,7 @@
+<%# Startr overlay of DocuSeal 3.0.3 app/views/shared/_logo.html.erb.
+    The Startr mark (startr.llc's clean disc) in place of DocuSeal's SVG, with
+    the same locals: class, width, height (alt is new). Width sets the size and
+    height follows, so a page rule that sets only height, such as the QR page's
+    `.qr-logo img`, cannot stretch it. Every caller that showed DocuSeal's name
+    shows "powered by DocuSeal" through its own override. %>
+<img src="/startr/startr-mark.png?v=1" alt="<%= local_assigns.fetch(:alt, 'Startr') %>" class="<%= local_assigns[:class] %>" width="<%= local_assigns.fetch(:width, '37').to_i %>" height="<%= local_assigns.fetch(:height, '37').to_i %>" style="height: auto; aspect-ratio: 1 / 1; flex-shrink: 0">
